@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "playerinspector",
+  "version": "${version}",
+  "name": "Player Inspector",
+  "description": "Hover over a player to see their HP and armor durability in a sleek HUD.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.playerinspector.client.PlayerInspectorClient"
+    ]
+  },
+  "mixins": [
+    "playerinspector.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
